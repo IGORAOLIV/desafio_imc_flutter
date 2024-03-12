@@ -2,28 +2,31 @@ class Pessoa {
   String _nome = "";
   double _peso = 0;
   double _altura = 0;
+  double _imcCalculado = 0;
 
-  void setNome(String nome) {
+  Pessoa(String nome, double peso, double altura) {
     _nome = nome;
-  }
-
-  String getNome(String nome) {
-    return _nome;
-  }
-
-  void setPeso(double peso) {
     _peso = peso;
-  }
-
-  double getPeso(double peso) {
-    return _peso;
-  }
-
-  void setAltura(double altura) {
     _altura = altura;
   }
 
-  double getAltura(double altura) {
+  String getNome() {
+    return _nome;
+  }
+
+  double getPeso() {
+    return _peso;
+  }
+
+  double getAltura() {
     return _altura;
+  }
+
+  double setImcCalculado(double imcCalculado) {
+    return _imcCalculado = imcCalculado;
+  }
+
+  double getImcCalculado() {
+    return _imcCalculado;
   }
 }
